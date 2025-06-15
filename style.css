@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: linear-gradient(135deg, #87CEEB 0%, #98FB98 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-container {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    color: #9B59B6;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(45deg, #FF6B6B, #4ECDC4, #45B7D1, #96CEB4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+#gameCanvas {
+    border: 4px solid #9B59B6;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to bottom, #87CEEB 0%, #98FB98 70%, #228B22 100%);
+    cursor: pointer;
+}
+
+.controls {
+    margin-top: 20px;
+    color: #2C3E50;
+}
+
+.controls p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+#score {
+    font-weight: bold;
+    color: #E74C3C;
+    font-size: 1.3em;
+}
+
+/* Responsive design */
+@media (max-width: 1300px) {
+    #gameCanvas {
+        width: 90vw;
+        height: auto;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 768px) {
+    .game-container {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    .controls p {
+        font-size: 1em;
+    }
+} 
